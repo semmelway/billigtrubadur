@@ -61,7 +61,7 @@ public class Christoffer extends Background {
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Utgångsort<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
-		html.writeText("Kungälv<br/><br/>");
+		html.writeText("Göteborg<br/><br/>");
 		
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Ljudanläggning<br/>");

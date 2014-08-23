@@ -3,74 +3,75 @@
  */
 package com.roberthelmbro.billigtrubadur.pages;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import com.roberthelmbro.billigtrubadur.uploadutil.ImageLoader;
-import com.roberthelmbro.billigtrubadur.uploadutil.Settings;
-import com.roberthelmbro.billigtrubadur.uploadutil.ImageLoader.UploadType;
-import r.html.HtmlUtil;
-import r.html.Div;
-
 import static com.roberthelmbro.billigtrubadur.uploadutil.Settings.baseFont;
 import static com.roberthelmbro.billigtrubadur.uploadutil.Settings.linkFontColor;
 import static com.roberthelmbro.billigtrubadur.uploadutil.Settings.linkFontSize;
 import static com.roberthelmbro.billigtrubadur.uploadutil.Settings.semiHeaderFontColor;
 import static com.roberthelmbro.billigtrubadur.uploadutil.Settings.semiHeaderFontSize;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import r.html.Div;
+import r.html.HtmlUtil;
+
+import com.roberthelmbro.billigtrubadur.uploadutil.ImageLoader;
+import com.roberthelmbro.billigtrubadur.uploadutil.ImageLoader.UploadType;
+import com.roberthelmbro.billigtrubadur.uploadutil.Settings;
 public class Elin extends Background {
-	
+
 	public static String label = "HRTENMSNDKWLEKMDSNF";
 	public static String fileName = "sdfkjfkdjirenvkdkfh.html";
-	
+
 	private String title = "Billig trubadur - " + label;
 	private String[] keywords = {"band", "artister", "Robert", "boka", "trubadur"};
 	private String description = "Billiga trubadurer helt enkelt";
 
 
 	private void generateBody(){
-		
-		
-		
+
+
+
 		html.setFont(Settings.headerFontColor, Settings.baseFont, Settings.headerFontSize);
 		html.writeText("Elin Swenson<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
 		html.writeText(
-				"�lskar att sjunga och spela sin akustiska gitarr." +
+				"Älskar att sjunga och spela sin akustiska gitarr." +
 				"<br/><br/>");
-		
+
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Instrument<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
 		html.writeText("Gitarr<br/><br/>");
-		
-		
+
+
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Spelar<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
 		html.writeText("Sam Smith, Bob Dylan, Bruce Soringsteen, Taylor Swift med mera.<br/>");
 		html.setFont(linkFontColor, Settings.baseFont, linkFontSize);
-		html.writeTextLink("Lyssna p� Elins Youtube-kanal", "http://www.youtube.com/knaaas", HtmlUtil.newWindow);
+		html.writeTextLink("Lyssna på Elins Youtube-kanal", "http://www.youtube.com/knaaas", HtmlUtil.newWindow);
 		html.lineBreak(2);
-		
+
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Standardpris<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
 		html.writeText("2000 kr<br/><br/>");
-		
+
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
-		html.writeText("Utg�ngsort<br/>");
+		html.writeText("Utgångsort<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
-		html.writeText("V�rnamo<br/><br/>");
-		
+		html.writeText("Värnamo<br/><br/>");
+
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
-		html.writeText("Ljudanl�ggning<br/>");
+		html.writeText("Ljudanläggning<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
-		html.writeText("Efter �verenskommelse.<br/><br/>");
-		
-		
-		
-		
-		
+		html.writeText("Efter överenskommelse.<br/><br/>");
+
+
+
+
+
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Kontakt och bokning<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
@@ -78,16 +79,16 @@ public class Elin extends Background {
 		html.setFont(Settings.linkFontColor, baseFont, Settings.linkFontSize);
 		html.mailTo("elinswenson@gmail.com", "elinswenson@gmail.com");
 		html.writeText("<br/>");
-		
+
 		//html.writeText("<object width=\"480\" height=\"385\"><param name=\"movie\" value=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"480\" height=\"385\"></embed></object>");
-		
+
 		div.drawImage(Settings.imagesPath + "elin1.png", 504, 0, 273, 0, 3);
 		//div.drawImage(Settings.imagesPath + "bjorn2.png", 0, 415, 333, 0, 3);
 		//div.drawImage(Settings.imagesPath + "bjorn3.png", 342, 415, 435, 0, 3);
-		
+
 	}
-	
-	
+
+
 	public void generateFile(String targetPath)throws FileNotFoundException, IOException{
 		html = new HtmlUtil();
 		html.setPrintWriter(targetPath + fileName);
@@ -98,7 +99,7 @@ public class Elin extends Background {
 		html.openBody();
 		div.centeredDivArea("mainArea", 960);
 		div.genericStartTag(100, 280, 500, 30, 2);//"body"
-		
+
 		generateBody();
 
 		div.genericEndTag();
@@ -114,11 +115,11 @@ public class Elin extends Background {
 		div.checkOpenCLose(fileName);
 		System.out.println(fileName + " generated");
 	}
-		
+
 		public void uploadResources(UploadType uploadType){
 			ImageLoader.upploadImageResource("elin1.png", uploadType);
 		}
-	
+
 		public static void main(String args[])throws FileNotFoundException, IOException{
 			Elin bjorn = new Elin();
 			bjorn.generateFile(Settings.testTargetPath);

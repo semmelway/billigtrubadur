@@ -56,7 +56,7 @@ public class Lizette extends Background {
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Utgångsort<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
-		html.writeText("Lund<br/><br/>");
+		html.writeText("Malmö<br/><br/>");
 		
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Ljudanläggning<br/>");

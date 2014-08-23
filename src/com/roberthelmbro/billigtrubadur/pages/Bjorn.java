@@ -71,7 +71,7 @@ public class Bjorn extends Background {
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
 		html.writeText("073-57 400 10 <br/>");
 		html.setFont(Settings.linkFontColor, baseFont, Settings.linkFontSize);
-		html.mailTo("b_grahn91@hotmail.com", "b_grahn91@hotmail.com");
+		html.mailTo("bjorn.grahn@gmail.com", "bjorn.grahn@gmail.com");
 		html.writeText("<br/>");
 		
 		//html.writeText("<object width=\"480\" height=\"385\"><param name=\"movie\" value=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"480\" height=\"385\"></embed></object>");
