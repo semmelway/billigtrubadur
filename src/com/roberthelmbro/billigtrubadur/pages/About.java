@@ -40,7 +40,7 @@ public class About extends Background{
 		html.writeText("Ta steget du också<br/>");
 		html.setFont(Settings.standardFontColor, "helvetica", Settings.standardFontSize);
 		html.writeText("Är du trubadur och vill synas på Billig trubadur? <br/>");
-		html.writeText("Tveka inte att höra av dig. än så länge är mailen elinorspelen@mydisk.se <br/><br/>");
+		html.writeText("Tveka inte att höra av dig via mail: sv.trubadurer@gmail.com <br/><br/>");
 
 		html.setFont(Settings.headerFontColor, "helvetica", Settings.headerFontSize);
 		html.writeTextLn("Övrigt");
@@ -55,7 +55,7 @@ public class About extends Background{
 		html.writeText("Billig trubadur presenteras i samarbete med: ");
 
 		html.setFont(linkFontColor, baseFont, linkFontSize);
-		html.writeTextLinkLn("Elinorspelen", "http://elinorspelen.mydisk.se", HtmlUtil.newWindow);
+		html.writeTextLinkLn("Sveriges trubadurer", "http://sverigestrubadurer.appspot.com", HtmlUtil.newWindow);
 
 		html.lineBreak(8);
 

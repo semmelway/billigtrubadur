@@ -116,6 +116,8 @@ public class Background {
 		ImageLoader.upploadImageResource(highlightMiddleFileName, uploadType);
 		ImageLoader.upploadImageResource(highlightShadowLeftFileName, uploadType);
 		ImageLoader.upploadImageResource(highlightShadowRightFileName, uploadType);
+		
+		ImageLoader.upploadImageResource("svTrubBanner.png", uploadType);
 	}
 
 	private int sumTo(int index, int[] arrayToSum) {

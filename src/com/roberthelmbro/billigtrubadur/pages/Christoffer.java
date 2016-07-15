@@ -81,8 +81,9 @@ public class Christoffer extends Background {
 		//html.writeText("<object width=\"480\" height=\"385\"><param name=\"movie\" value=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"480\" height=\"385\"></embed></object>");
 		
 		div.drawImage(Settings.imagesPath + "christoffer1.png", 504, 0, 273, 0, 3);
-		div.drawImage(Settings.imagesPath + "christoffer2.png", 0, 415, 356, 0, 3);
-		div.drawImage(Settings.imagesPath + "christoffer3.png", 369, 415, 408, 0, 3);
+		div.drawImageLink(Settings.imagesPath + "svTrubBanner.png", "http://sverigestrubadurer.appspot.com", 0, 420, 777, 80, 3);
+		div.drawImage(Settings.imagesPath + "christoffer2.png", 0, 515, 356, 0, 3);
+		div.drawImage(Settings.imagesPath + "christoffer3.png", 369, 515, 408, 0, 3);
 		
 	}
 	

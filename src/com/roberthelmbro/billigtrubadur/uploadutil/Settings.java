@@ -6,7 +6,7 @@ public class Settings {
 	 * Called as root folder.
 	 */
 	public final static String testTargetPath = "/home/CORPUSERS/23053389/temp/billigTrubadur/";
-	public final static String publishTargetPath = "/home/CORPUSERS/23053389/dev/noneRepo/billigTrubadurDepl/war/";
+	public final static String publishTargetPath = "/home/CORPUSERS/23053389/dev/noneRepo/billigTrubDepl/Billig trubadur deployment/war/";
 	
 	/**
 	 * Relative path to images resources at the webpage.

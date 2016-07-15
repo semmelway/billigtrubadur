@@ -29,6 +29,8 @@ public class Index extends Background{
 		html.setFont(Settings.standardFontColor, "helvetica", Settings.standardFontSize);
 		html.writeText("Billiga trubadurer helt enkelt. <br/><br/>" +
 				"En trubadur passar utmärkt som underhållning på kalaset, bröllopsfesten, puben, firmafesten, kundfesten med mera.<br/><br/> Vi samlar billiga trubadurer från hela sverige. än så länge är täckningen något begränsad men rekrytering pågår! Det skall vara enkelt att boka en trubadur på varje profil står ett standardpris som även täcker resa.");
+		
+		div.drawImageLink(Settings.imagesPath + "svTrubBanner.png", "https://sverigestrubadurer.appspot.com", 0, 420, 777, 80, 3);
 	}
 	
 

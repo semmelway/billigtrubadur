@@ -59,7 +59,7 @@ public class Amanda extends Background {
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Utgångsort<br/>");
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
-		html.writeText("New York, USA<br/><br/>");
+		html.writeText("Göteborg<br/><br/>");
 
 		html.setFont(semiHeaderFontColor, Settings.baseFont, semiHeaderFontSize);
 		html.writeText("Ljudanläggning<br/>");
@@ -82,6 +82,8 @@ public class Amanda extends Background {
 		//html.writeText("<object width=\"480\" height=\"385\"><param name=\"movie\" value=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"480\" height=\"385\"></embed></object>");
 
 		div.drawImage(Settings.imagesPath + "amanda1.png", 504, 0, 273, 0, 3);
+		
+		div.drawImageLink(Settings.imagesPath + "svTrubBanner.png", "https://sverigestrubadurer.appspot.com", 0, 420, 777, 80, 3);
 		//div.drawImage(Settings.imagesPath + "bjorn2.png", 0, 415, 333, 0, 3);
 		//div.drawImage(Settings.imagesPath + "bjorn3.png", 342, 415, 435, 0, 3);
 

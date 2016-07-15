@@ -65,14 +65,15 @@ public class Carl extends Background{
 		html.setFont(Settings.standardFontColor, Settings.baseFont, Settings.standardFontSize);
 		html.writeText("070-686 9579<br/>");
 		html.setFont(Settings.linkFontColor, baseFont, Settings.linkFontSize);
-		html.mailTo("elinorspelen@mydisk.se", "elinorspelen@mydisk.se");
+		html.mailTo("sv.trubadurer@gmail.com", "sv.trubadurer@gmail.com");
 		html.writeText("<br/>");
 		
 		//html.writeText("<object width=\"480\" height=\"385\"><param name=\"movie\" value=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/JaL-Y3aRmK0?fs=1&amp;hl=sv_SE&amp;rel=0\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"480\" height=\"385\"></embed></object>");
 		
 		div.drawImage(Settings.imagesPath + "robert2.png", 504, 0, 273, 0, 3);
-		div.drawImage(Settings.imagesPath + "robert1.png", 0, 415, 356, 0, 3);
-		div.drawImage(Settings.imagesPath + "robert3.png", 369, 415, 408, 0, 3);
+		div.drawImageLink(Settings.imagesPath + "svTrubBanner.png", "https://sverigestrubadurer.appspot.com", 0, 420, 777, 80, 3);
+		div.drawImage(Settings.imagesPath + "robert1.png", 0, 515, 356, 0, 3);
+		div.drawImage(Settings.imagesPath + "robert3.png", 369, 515, 408, 0, 3);
 		
 	}
 	
